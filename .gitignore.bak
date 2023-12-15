@@ -366,42 +366,42 @@ FodyWeavers.xsd
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-FrontEnd_Angular/DashBoard/dist
-FrontEnd_Angular/DashBoard/tmp
-FrontEnd_Angular/DashBoard/out-tsc
-FrontEnd_Angular/DashBoard/bazel-out
+/dist
+/tmp
+/out-tsc
+/bazel-out
 
 # Node
-FrontEnd_Angular/DashBoard/node_modules
-FrontEnd_Angular/DashBoard/npm-debug.log
+/node_modules
+npm-debug.log
 yarn-error.log
 
 # IDEs and editors
-FrontEnd_Angular/DashBoard.idea/
-FrontEnd_Angular/DashBoard.project
-FrontEnd_Angular/DashBoard.classpath
-FrontEnd_Angular/DashBoard.c9/
-FrontEnd_Angular/DashBoard*.launch
-FrontEnd_Angular/DashBoard.settings/
-FrontEnd_Angular/DashBoard*.sublime-workspace
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # Visual Studio Code
-FrontEnd_Angular/DashBoard/.vscode/*
-FrontEnd_Angular/DashBoard/!.vscode/settings.json
-FrontEnd_Angular/DashBoard/!.vscode/tasks.json
-FrontEnd_Angular/DashBoard/!.vscode/launch.json
-FrontEnd_Angular/DashBoard/!.vscode/extensions.json
-FrontEnd_Angular/DashBoard/.history/*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
 
 # Miscellaneous
-FrontEnd_Angular/DashBoard/.angular/cache
-FrontEnd_Angular/DashBoard/.sass-cache/
-FrontEnd_Angular/DashBoard/connect.lock
-FrontEnd_Angular/DashBoard/coverage
-FrontEnd_Angular/DashBoard/libpeerconnection.log
-FrontEnd_Angular/DashBoardtestem.log
-FrontEnd_Angular/DashBoard/typings
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
 
 # System files
-FrontEnd_Angular/DashBoard/.DS_Store
-FrontEnd_Angular/DashBoard/Thumbs.db
+.DS_Store
+Thumbs.db

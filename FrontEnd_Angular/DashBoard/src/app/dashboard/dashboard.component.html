@@ -1,0 +1,44 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                    <div class="card-body py-4 px-4 px-md-5">
+                        <div type="button" class="btn btn-dark float-end" (click)="onLogOut()">LogOut</div>
+
+                        <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                            <i class="fas fa-check-square me-1"></i>
+                            <u>My Notes</u>
+                        </p>
+
+                        <div class="pb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <input type="text" class="form-control form-control-lg"
+                                            id="exampleFormControlInput1" [(ngModel)]="newNote.noteTitle" placeholder="Title">
+
+                                        <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
+                                                class="fas fa-calendar-alt fa-lg me-3"></i></a>
+                                        <div  >
+                                            <button *ngIf="isEditing; else addBtn" type="button" class="btn btn-primary" (click)="onSaveEditNote()">Save</button>
+                                            <ng-template #addBtn >
+                                                <button type="button" class="btn btn-primary" (click)="onAddNewNote()">Add</button>
+                                            </ng-template>
+                                        </div>
+                                    </div><input type="text" class="form-control form-control-lg"
+                                        id="exampleFormControlInput1" [(ngModel)]="newNote.noteDetail" placeholder="Note">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+                        <div *ngFor="let note of notes">
+                            <app-note-summary [noteSummary]="note" (recordEditing)="EditRecord($event)" (recordDeleted)="RefreshNotes()"></app-note-summary>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

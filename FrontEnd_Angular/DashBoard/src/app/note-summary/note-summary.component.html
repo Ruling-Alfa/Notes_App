@@ -1,0 +1,20 @@
+<ul class="list-group list-group-horizontal rounded-0 bg-transparent">
+    
+    <li
+      class="list-group-item px-1 py-1 d-flex align-items-center border-0 bg-transparent">
+      <button type="button" class="btn btn-secondary" (click)="onRecordEditing()">Edit</button>
+    </li>
+    <li
+      class="list-group-item px-1 py-1 d-flex align-items-center border-0 bg-transparent">
+      <button type="button" class="btn btn-danger" (click)="onDeleteNote()">Delete</button>
+    </li>
+    <!-- <li
+      class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
+      <div>{{ noteSummary.id }}</div>
+    </li> -->
+    <li
+      class="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
+      <p class="lead fw-normal mb-0"> {{ noteSummary.noteTitle }}</p>
+    </li>
+    
+  </ul>
